@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Diagnostic Assessment Project</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']]
+      }
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>SEED AI Project</h1>
+      <p>
+        The assessment is based on learning goal facets
+        and misconception facets related to confidence intervals
+        and sampling distributions.
+      </p>
+
+      <nav>
+        <a href="#facets">Facets</a>
+        <a href="#items">Best 10 Items</a>
+        <a href="#qmatrix">Q-Matrix</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <!-- FACETS -->
+    <section id="facets">
+
+      <h2>Facet Map</h2>
+
+      <p>
+        The current facet map covers 17 dimensions 
+        of student understanding about confidence intervals:
+      </p>
+
+      <div class="facet-columns">
+
+        <div class="facet-box">
+          <h3>Learning Goals (A-Facets)</h3>
+
+          <div class="facet">
+            <strong>A1</strong>
+            <span>
+              As sample size increases, standard errors decrease
+              and the sampling distribution becomes more packed.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>A2</strong>
+            <span>
+              As sample size increases, the sampling distribution
+              approaches normal and does not mirror the population.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>A3</strong>
+            <span>
+              The mean of the sampling distribution equals
+              the population mean.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>A4</strong>
+            <span>
+              Confidence level is the percentage of intervals
+              capturing the parameter across repeated samples.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>A5</strong>
+            <span>
+              A confidence interval estimates a population parameter,
+              not a sample statistic.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>A6</strong>
+            <span>
+              Confidence interval width increases as confidence
+              level increases.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>A7</strong>
+            <span>
+              Confidence interval width increases when standard error increases.
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="facet-box">
+          <h3>Misconceptions (B-Facets)</h3>
+
+          <div class="facet">
+            <strong>B8</strong>
+            <span>
+              Sampling distribution is the same as sample distribution.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B9</strong>
+            <span>
+              Sampling distribution mirrors the population distribution.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B10</strong>
+            <span>
+              Larger samples make the sampling distribution more spread out.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B11</strong>
+            <span>
+              Larger samples make the sampling distribution closer
+              to the population distribution.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B12</strong>
+            <span>
+              Sampling distribution is always normal regardless of sample size.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B13</strong>
+            <span>
+              Mean of the sampling distribution depends on sample size.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B14</strong>
+            <span>
+              A larger sample mean is always closer to the population mean.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B15</strong>
+            <span>
+              A confidence interval is a probability statement
+              about a specific interval.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B16</strong>
+            <span>
+              Confidence intervals estimate sample statistics
+              rather than population parameters.
+            </span>
+          </div>
+
+          <div class="facet">
+            <strong>B17</strong>
+            <span>
+              Higher confidence means a more precise,
+              shorter confidence interval.
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ITEMS -->
+    <section id="items">
+
+      <h2>Best 10 Items</h2>
+
+      <p>
+        10 selected diagnostic assessment items are shown below.
+        Click each item's button to display its Q-matrix.
+      </p>
+
+      <div id="items-container"></div>
+
+    </section>
+
+
+    <!-- FULL Q MATRIX -->
+    <section id="qmatrix">
+
+      <h2>Q-Matrix Summary</h2>
+
+      <p>
+        Each response option is mapped to one or more learning goal
+        or misconception facets.
+      </p>
+
+      <div id="matrix-summary"></div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      MAP Lab · University of Washington
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

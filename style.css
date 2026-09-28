@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+
+  background: #f6f7f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+
+/* Header */
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 40px 0 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+header p {
+  color: #666;
+  margin-top: 8px;
+}
+
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Main sections */
+
+section {
+  margin: 60px 0;
+}
+
+section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+}
+
+
+/* Facets */
+
+.facet-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.facet-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.facet-box h3 {
+  margin-top: 0;
+}
+
+.facet {
+  display: flex;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.facet:last-child {
+  border-bottom: none;
+}
+
+.facet strong {
+  min-width: 40px;
+}
+
+
+/* Items */
+
+.item-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.item-card h3 {
+  margin-top: 0;
+}
+
+.question {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.options li {
+  background: #f8f8f8;
+  margin: 9px 0;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+
+/* Buttons */
+
+button {
+  font-family: inherit;
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: 1px solid #555;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+
+/* Matrices */
+
+.matrix-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.matrix-container.hidden {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 900px;
+  font-size: 0.85rem;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 7px;
+  text-align: center;
+}
+
+th {
+  background: #eee;
+}
+
+.matrix-item {
+  margin-bottom: 40px;
+}
+
+
+/* Footer */
+
+footer {
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 30px;
+  text-align: center;
+  color: #666;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+  .facet-columns {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+}

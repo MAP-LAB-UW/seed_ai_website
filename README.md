@@ -36,8 +36,4 @@ https://map-lab-uw.github.io/seed_ai_website/
 
 ## Running the Website Locally
 
-You can download the 
-```text
-seed_ai_website/
-```
-folder and open `index.html` directly in a web browser.
+You can download the `seed_ai_website/` folder and open `index.html` directly in a web browser.

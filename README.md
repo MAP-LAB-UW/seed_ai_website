@@ -28,8 +28,16 @@ seed_ai_website/
 * `script.js` stores the assessment items, Q-matrices, and interactive webpage behavior.
 * `README.md` contains information about the project and website setup.
 
+## Live Website
+
+Open the website here:
+
+https://map-lab-uw.github.io/seed_ai_website/
+
 ## Running the Website Locally
 
-Because this is a static website, no backend server is required.
-
-You can open `index.html` directly in a web browser.
+You can download the 
+```text
+seed_ai_website/
+```
+folder and open `index.html` directly in a web browser.

@@ -287,3 +287,28 @@ footer a:hover {
   border-color: #4B2E83;
   box-shadow: 0 0 0 3px rgba(75, 46, 131, 0.15);
 }
+
+.item-image {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+
+  margin: 20px auto;
+
+  border-radius: 8px;
+}
+
+.open-response {
+  margin-top: 20px;
+}
+
+.response-prompt {
+  padding: 15px;
+  margin-bottom: 12px;
+
+  background: #f8f8f8;
+  border-left: 4px solid #4B2E83;
+
+  font-weight: 500;
+}
